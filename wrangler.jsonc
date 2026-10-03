@@ -1,0 +1,9 @@
+{
+	// Site estático: a Cloudflare serve a pasta dist gerada pelo `npm run build`.
+	// O name precisa ser igual ao nome do Worker no painel da Cloudflare.
+	"name": "site",
+	"compatibility_date": "2026-10-03",
+	"assets": {
+		"directory": "./dist",
+	},
+}

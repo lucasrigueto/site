@@ -18,11 +18,11 @@ npm run preview # serve o build localmente
 
 ## Publicação
 
-Cloudflare Pages ligado a este repositório. Cada push no `main` publica sozinho.
+Cloudflare Workers (static assets) ligado a este repositório, configurado em `wrangler.jsonc`. Cada push no `main` publica sozinho.
 
-- Framework preset: React (Vite)
+- Deploy command: `npx wrangler deploy`
 - Build command: `npm run build`
-- Build directory: `dist`
+- Pasta publicada: `dist` (definida no `wrangler.jsonc`)
 
 ## Onde mexer
 
