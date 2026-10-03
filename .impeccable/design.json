@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-03T12:00:00Z",
+  "title": "Design System: Rigueto · Agente SDR + Tráfego",
+  "scope": "Site principal (index.html, source src/sdr/).",
+  "extensions": {
+    "colorMeta": {
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#1e1e1d", "tonalRamp": ["#0f0f0e", "#1e1e1d", "#2b2b2b", "#33332f", "#4a4a46", "#6f6e6a", "#a9a8a2", "#e6e4dc"] },
+      "matte": { "role": "neutral", "displayName": "Matte", "canonical": "#2b2b2b", "tonalRamp": ["#121212", "#1f1f1f", "#2b2b2b", "#3a3a3a", "#555555", "#7a7a7a", "#adadad", "#e3e3e3"] },
+      "raise": { "role": "neutral", "displayName": "Raise", "canonical": "#33332f", "tonalRamp": ["#161614", "#24241f", "#33332f", "#45453f", "#5f5f58", "#84837b", "#b4b3aa", "#e8e7df"] },
+      "royal-blue": { "role": "secondary", "displayName": "Royal Blue", "canonical": "#11224e", "tonalRamp": ["#060c1d", "#0b1735", "#11224e", "#1c3368", "#3b507b", "#6378a6", "#a3b2d4", "#e3e9f6"] },
+      "blue-deep": { "role": "secondary", "displayName": "Blue Deep", "canonical": "#0b1735", "tonalRamp": ["#040915", "#0b1735", "#11224e", "#1c3368", "#3b507b", "#6378a6", "#a3b2d4", "#e3e9f6"] },
+      "sapphire": { "role": "secondary", "displayName": "Sapphire", "canonical": "#3b507b", "tonalRamp": ["#121a2a", "#1f2b45", "#2c3c60", "#3b507b", "#55699a", "#7f91ba", "#b3c0db", "#e6ebf5"] },
+      "quicksand-gold": { "role": "primary", "displayName": "Quicksand Gold", "canonical": "#ddc28d", "tonalRamp": ["#2a2721", "#39352b", "#6b5a36", "#a68b55", "#ddc28d", "#e9d4aa", "#f2e5cb", "#faf4e8"] },
+      "gold-hi": { "role": "primary", "displayName": "Gold Hi (hover)", "canonical": "#e9d4aa", "tonalRamp": ["#2a2721", "#39352b", "#6b5a36", "#a68b55", "#ddc28d", "#e9d4aa", "#f2e5cb", "#faf4e8"] },
+      "cream": { "role": "neutral", "displayName": "Cream", "canonical": "#f1efe7", "tonalRamp": ["#2d2c28", "#55534d", "#7d7b73", "#a5a39a", "#c9c7be", "#d8cac1", "#f1efe7", "#faf9f5"] },
+      "shellstone": { "role": "neutral", "displayName": "Shellstone", "canonical": "#d8cac1", "tonalRamp": ["#2e2925", "#4f4740", "#71665d", "#94877d", "#b8a99f", "#d8cac1", "#e8ded8", "#f6f1ee"] },
+      "muted": { "role": "neutral", "displayName": "Muted Cream (70%)", "canonical": "rgba(241, 239, 231, 0.7)" },
+      "faint": { "role": "neutral", "displayName": "Faint Rule (12%)", "canonical": "rgba(241, 239, 231, 0.12)" },
+      "hair-gold": { "role": "primary", "displayName": "Hair Gold (30%)", "canonical": "rgba(221, 194, 141, 0.3)" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Só o H1 do hero, com text-wrap balance e no máximo uma faixa dourada." },
+      "display-sm": { "displayName": "Display Small", "purpose": "Título da chamada final." },
+      "headline": { "displayName": "Headline", "purpose": "H2 de seção, máximo 17ch." },
+      "title": { "displayName": "Title", "purpose": "Pergunta do FAQ, título de passo, nome em linha de lista." },
+      "lede": { "displayName": "Lede", "purpose": "Parágrafo sob o H1 e o título final, máximo 50ch." },
+      "body": { "displayName": "Body", "purpose": "Texto de seção em creme a 70%, 48 a 62ch." },
+      "label": { "displayName": "Label", "purpose": "Inter em caixa alta com tracking: nav, cabeçalho de coluna do kanban." },
+      "button": { "displayName": "Button", "purpose": "Inter 500 em caixa alta, 0.09em." }
+    },
+    "interfaceFidelityPalette": {
+      "purpose": "Cores emprestadas dos produtos reais, usadas só dentro das demonstrações simuladas. Não são tokens de marca.",
+      "whatsapp": { "chat-bg": "#0b141a", "bar": "#202c33", "bubble-in": "#202c33", "bubble-out": "#005c4b", "text": "#e9edef", "meta": "#8696a0", "ticks": "#53bdeb", "accent": "#00a884", "compose-field": "#2a3942" },
+      "instagram": { "card": "#0c0c0c", "cta-bar": "#161616", "text": "#f5f5f5" },
+      "google": { "card": "#1f1f1f", "query": "#303134", "title-link": "#99c3ff", "text": "#bdc1c6" },
+      "font": "-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+    },
+    "shadows": [
+      { "name": "floating-object", "value": "0 30px 70px -30px rgba(0, 0, 0, 0.7)", "purpose": "Anúncios e caixa de entrada flutuando sobre a seção." },
+      { "name": "phone", "value": "inset 0 0 0 1px rgba(255,255,255,0.09), 0 2px 0 1px #050505, 0 40px 90px -30px rgba(0,0,0,0.75), 0 20px 40px -20px rgba(0,0,0,0.5)", "purpose": "Moldura do celular do hero." },
+      { "name": "kanban-card", "value": "0 6px 16px -10px rgba(0, 0, 0, 0.6)", "purpose": "Separação mínima do card dentro da coluna." },
+      { "name": "gold-glow", "value": "0 16px 40px -12px rgba(221, 194, 141, 0.45)", "purpose": "Só no hover do botão dourado." },
+      { "name": "state-halo", "value": "0 0 0 5px rgba(221, 194, 141, 0.16)", "purpose": "Ponto ativo das notas do agente e ponto viajante do omnicanal." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Curva única da casa para entradas, hovers e deslocamentos." },
+      { "name": "strip-wipe", "value": "1s 0.35s cubic-bezier(0.7, 0, 0.2, 1)", "purpose": "Entrada única da faixa dourada atrás da frase-chave." },
+      { "name": "bubble-in", "value": "0.42s var(--ease)", "purpose": "Chegada de mensagem no chat simulado." },
+      { "name": "row-in", "value": "0.7s var(--ease)", "purpose": "Linha nova entrando na caixa de entrada." },
+      { "name": "hover", "value": "0.25s a 0.35s", "purpose": "Cor e deslocamento de botões e links." },
+      { "name": "reduced-motion", "value": "durations 0.01ms, final state shown", "purpose": "Toda demonstração mostra o estado final parado e pausa fora da tela." }
+    ],
+    "breakpoints": [
+      { "name": "notes-collapse", "value": "1180px" },
+      { "name": "single-column", "value": "980px" },
+      { "name": "mobile", "value": "640px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Gold Button",
+      "kind": "button",
+      "refersTo": "button-gold",
+      "description": "Ação única da página: abre o WhatsApp da Rigueto com mensagem pronta.",
+      "html": "<a class=\"ds-btn ds-btn-gold\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z\"/></svg><span>Quero um agente desses</span></a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 15px 24px; border-radius: 8px; font-family: 'Inter', system-ui, Arial, sans-serif; font-weight: 500; font-size: 0.82rem; letter-spacing: 0.09em; text-transform: uppercase; text-decoration: none; white-space: nowrap; transition: transform .35s cubic-bezier(0.16,1,0.3,1), background-color .25s, border-color .25s, box-shadow .35s cubic-bezier(0.16,1,0.3,1), color .25s; } .ds-btn-gold { background: #ddc28d; color: #1e1e1d; } .ds-btn-gold:hover { background: #e9d4aa; transform: translateY(-2px); box-shadow: 0 16px 40px -12px rgba(221,194,141,0.45); } .ds-btn-gold:active { transform: translateY(0); } .ds-btn:focus-visible { outline: 2px solid #ddc28d; outline-offset: 3px; }"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Ação secundária de rolagem (Ver como funciona), fio creme que vira dourado.",
+      "html": "<a class=\"ds-btn-line\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M19 12l-7 7-7-7\"/></svg><span>Ver como funciona</span></a>",
+      "css": ".ds-btn-line { display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 15px 24px; border-radius: 8px; border: 1px solid rgba(241,239,231,0.28); background: transparent; color: #f1efe7; font-family: 'Inter', system-ui, Arial, sans-serif; font-weight: 500; font-size: 0.82rem; letter-spacing: 0.09em; text-transform: uppercase; text-decoration: none; transition: border-color .25s, color .25s; } .ds-btn-line:hover { border-color: #ddc28d; color: #ddc28d; } .ds-btn-line:focus-visible { outline: 2px solid #ddc28d; outline-offset: 3px; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Barra fixa, Ink com fio Faint após rolar; links Inter em caixa alta que viram dourado.",
+      "html": "<header class=\"ds-nav\"><span class=\"ds-nav-logo\">rigueto</span><nav><a href=\"#\">Agente</a><a href=\"#\">Canais</a><a href=\"#\">Funil</a><a href=\"#\">Dúvidas</a></nav><a class=\"ds-nav-btn\" href=\"#\">Falar no WhatsApp</a></header>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 32px; height: 76px; padding: 0 32px; background: #1e1e1d; border-bottom: 1px solid rgba(241,239,231,0.12); } .ds-nav-logo { font-family: 'Instrument Sans', Arial, sans-serif; font-weight: 600; font-size: 1.4rem; color: #f1efe7; } .ds-nav nav { margin-left: auto; display: flex; gap: 30px; } .ds-nav nav a { font-family: 'Inter', system-ui, Arial, sans-serif; font-size: 0.78rem; font-weight: 400; letter-spacing: 0.13em; text-transform: uppercase; text-decoration: none; color: rgba(241,239,231,0.7); transition: color .2s; } .ds-nav nav a:hover { color: #ddc28d; } .ds-nav-btn { min-height: 42px; padding: 10px 16px; display: inline-flex; align-items: center; border-radius: 8px; background: #ddc28d; color: #1e1e1d; font-family: 'Inter', system-ui, Arial, sans-serif; font-weight: 500; font-size: 0.74rem; letter-spacing: 0.09em; text-transform: uppercase; text-decoration: none; } .ds-nav-btn:hover { background: #e9d4aa; } .ds-nav a:focus-visible { outline: 2px solid #ddc28d; outline-offset: 3px; }"
+    },
+    {
+      "name": "Highlighter Strip",
+      "kind": "custom",
+      "refersTo": "display",
+      "description": "Faixa dourada com pontas inclinadas atrás da frase-chave, entra uma vez.",
+      "html": "<h1 class=\"ds-display\">Seu WhatsApp respondendo e <span class=\"ds-strip\">fechando venda</span> às 23h47.</h1>",
+      "css": ".ds-display { font-family: 'Instrument Sans', Arial, sans-serif; font-weight: 600; font-size: clamp(2.45rem, 5.3vw, 4.6rem); line-height: .99; letter-spacing: -0.038em; color: #f1efe7; text-wrap: balance; margin: 0; } .ds-strip { color: #1e1e1d; padding: 0 .24em; margin: 0 -.04em; background-image: linear-gradient(100deg, transparent .2em, #ddc28d .2em, #ddc28d calc(100% - .2em), transparent calc(100% - .2em)); background-repeat: no-repeat; background-size: 100% 88%; background-position: 0 60%; -webkit-box-decoration-break: clone; box-decoration-break: clone; }"
+    },
+    {
+      "name": "Inbox Status Pill",
+      "kind": "chip",
+      "refersTo": "status-pill",
+      "description": "Estado da conversa na caixa de entrada: agente (dourado) ou equipe (creme).",
+      "html": "<span class=\"ds-pill\">Agente respondendo</span> <span class=\"ds-pill ds-pill-human\">Com a equipe</span>",
+      "css": ".ds-pill { display: inline-flex; align-items: center; gap: 5px; padding: 4px 9px; border-radius: 20px; background: rgba(221,194,141,0.13); color: #ddc28d; font-family: 'Inter', system-ui, Arial, sans-serif; font-size: 0.72rem; white-space: nowrap; } .ds-pill-human { background: rgba(241,239,231,0.1); color: #f1efe7; }"
+    },
+    {
+      "name": "Kanban Card",
+      "kind": "card",
+      "refersTo": "kanban-card",
+      "description": "Card de contato no funil; ao fechar ganha fio dourado e etiqueta sólida.",
+      "html": "<div class=\"ds-kc\"><strong>Mariana Costa</strong><span class=\"ds-kc-int\">Avaliação de harmonização</span><span class=\"ds-kc-tag\">Sinal pago</span></div>",
+      "css": ".ds-kc { display: grid; gap: 6px; width: 200px; padding: 11px 11px 12px; border-radius: 9px; background: #39352b; border: 1px solid rgba(221,194,141,0.6); box-shadow: 0 6px 16px -10px rgba(0,0,0,0.6); font-family: 'Inter', system-ui, Arial, sans-serif; color: #f1efe7; transition: border-color .6s, background-color .6s; } .ds-kc strong { font-weight: 500; font-size: .84rem; } .ds-kc-int { font-size: .8rem; font-weight: 300; color: rgba(241,239,231,0.7); line-height: 1.3; } .ds-kc-tag { width: fit-content; padding: 3px 7px; border-radius: 6px; background: #ddc28d; color: #1e1e1d; font-size: .7rem; font-weight: 500; }"
+    },
+    {
+      "name": "Agent Notes",
+      "kind": "custom",
+      "description": "Lista presa numa espinha dourada fina que acende em sincronia com a conversa.",
+      "html": "<ol class=\"ds-notes\"><li class=\"is-done\"><span class=\"ds-dot\">&#10003;</span>Respondeu em 4 segundos</li><li class=\"is-active\"><span class=\"ds-dot\">&#10003;</span>Contornou a objeção de preço</li><li><span class=\"ds-dot\"></span>Agendou e cobrou o sinal</li></ol>",
+      "css": ".ds-notes { position: relative; list-style: none; margin: 0; padding: 0; width: 220px; font-family: 'Inter', system-ui, Arial, sans-serif; font-weight: 300; } .ds-notes::before { content: ''; position: absolute; left: 10px; top: 20px; bottom: 20px; width: 1px; background: rgba(221,194,141,0.3); } .ds-notes li { position: relative; display: flex; gap: 14px; padding: 10px 0; font-size: .93rem; line-height: 1.4; color: rgba(241,239,231,0.55); transition: color .5s, transform .5s cubic-bezier(0.16,1,0.3,1); } .ds-dot { flex: none; display: grid; place-items: center; width: 21px; height: 21px; border-radius: 50%; background: #1e1e1d; border: 1px solid rgba(241,239,231,0.22); color: transparent; font-size: 11px; } .ds-notes li.is-done { color: rgba(241,239,231,0.84); } .ds-notes li.is-done .ds-dot { border-color: #ddc28d; color: #ddc28d; background: #2a2721; } .ds-notes li.is-active { color: #ddc28d; transform: translateX(4px); } .ds-notes li.is-active .ds-dot { background: #ddc28d; border-color: #ddc28d; color: #1e1e1d; box-shadow: 0 0 0 5px rgba(221,194,141,0.16); }"
+    },
+    {
+      "name": "Process Step",
+      "kind": "custom",
+      "refersTo": "step-number",
+      "description": "Passo com número circular montado sobre o fio dourado do topo.",
+      "html": "<div class=\"ds-step\"><span class=\"ds-step-n\">1</span><h3>Diagnóstico</h3><p>Uma conversa pra entender o que você vende e onde as vendas escapam.</p></div>",
+      "css": ".ds-step { position: relative; width: 240px; padding-top: 34px; border-top: 1px solid rgba(221,194,141,0.3); margin-top: 20px; } .ds-step-n { position: absolute; top: -17px; left: 0; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: #1e1e1d; border: 1px solid #ddc28d; color: #ddc28d; font-family: 'Instrument Sans', Arial, sans-serif; font-weight: 600; font-size: .95rem; } .ds-step h3 { margin: 0 0 8px; font-family: 'Instrument Sans', Arial, sans-serif; font-weight: 600; font-size: 1.25rem; letter-spacing: -0.015em; color: #f1efe7; } .ds-step p { margin: 0; font-family: 'Inter', system-ui, Arial, sans-serif; font-weight: 300; font-size: .97rem; line-height: 1.65; color: rgba(241,239,231,0.7); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "A Operação no Ar",
+    "overview": "A página não descreve o serviço: ela roda. O chão é preto fosco, as dobras de sistema viram campos inteiros de Royal Blue, e em cima disso aparecem interfaces desenhadas em fidelidade de produto (WhatsApp escuro, caixa de entrada unificada, kanban, anúncio do Instagram e do Google) que se mexem sozinhas enquanto estão na tela. O dourado não decora; ele marca o que acabou de acontecer: a mensagem que chegou, o canal que pulsou, o card que fechou, a frase-chave do título.\n\nA densidade é de produto, não de folheto. Cada seção alterna um bloco de texto curto (headline Instrument Sans 600, corpo Inter 400 em creme a 70%) com uma demonstração viva. A estrutura é feita de linhas finas, quase sempre a 1px, em creme a 12% ou dourado a 30%, em vez de caixas com sombra.\n\nToda demonstração é rotulada como simulada numa legenda pequena logo abaixo, respeita prefers-reduced-motion (mostra o estado final parado) e pausa fora da tela.",
+    "keyCharacteristics": [
+      "Preto fosco em dois tons alternando por seção, Royal Blue em campos de largura total nas dobras de sistema (canais e chamada final).",
+      "Dourado só como sinal de estado e ação, nunca como fundo de seção.",
+      "Interfaces de terceiros reproduzidas com as cores e a fonte de sistema delas, dentro do mundo Rigueto.",
+      "Estrutura por fios de 1px; sombras só em objetos físicos (celular, anúncios, painéis flutuantes).",
+      "Movimento com uma curva só, de saída longa, e tudo com fallback parado."
+    ],
+    "rules": [
+      { "name": "The Gold Is a Signal Rule", "body": "Dourado marca ação, conexão ou desfecho. Se um elemento dourado não é clicável, não acabou de mudar de estado e não é a frase-chave do título, ele não deveria ser dourado.", "section": "colors" },
+      { "name": "The Blue Field Rule", "body": "Royal Blue entra como seção inteira de ponta a ponta, nunca como cartão solto sobre o preto. Dentro do campo azul, painéis descem para Blue Deep.", "section": "colors" },
+      { "name": "The Borrowed Palette Rule", "body": "Interfaces simuladas usam as cores reais do produto que imitam (WhatsApp escuro, Instagram, Google) e ficam fora da paleta de marca; elas não viram tokens e não aparecem fora das demonstrações.", "section": "colors" },
+      { "name": "The Highlighter Strip Rule", "body": "A frase-chave de um título de abertura ou fechamento ganha a faixa dourada com pontas inclinadas (gradiente a 100deg, 88% da altura), texto vira Ink, e ela entra uma vez num wipe de 1s. No máximo uma faixa por título.", "section": "typography" },
+      { "name": "The Uppercase Is Inter Rule", "body": "Caixa alta com tracking aberto é sempre Inter (botões, nav, rótulos de coluna), como na assinatura \"CONSULTORIA\" da marca. Instrument Sans nunca vai em caixa alta.", "section": "typography" },
+      { "name": "The Physical Objects Only Rule", "body": "Sombra é para aparelho e para painel que flutua sobre a seção. Texto, listas, passos e FAQ ficam planos, separados por fio.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do usar o dourado (#ddc28d) só para ação, conexão, desfecho e a faixa da frase-chave.",
+      "Do colocar Royal Blue (#11224e) como campo de seção inteiro e descer painéis internos para Blue Deep (#0b1735).",
+      "Do separar linhas de lista com fios de 1px (creme a 12% ou dourado a 30%) em vez de cards com sombra.",
+      "Do desenhar interfaces simuladas com as cores e a fonte de sistema do produto real e rotular cada uma com legenda \"simulado/fictício\" logo abaixo.",
+      "Do animar com cubic-bezier(0.16, 1, 0.3, 1), pausar fora da tela e mostrar o estado final parado com prefers-reduced-motion.",
+      "Do manter caixa alta com tracking só em Inter (botões, nav, rótulos)."
+    ],
+    "donts": [
+      "Don't usar dourado como fundo de seção ou em mais de uma faixa por título.",
+      "Don't pôr sombra em texto, listas, passos ou FAQ; sombra é de objeto físico.",
+      "Don't levar as cores de WhatsApp, Instagram ou Google para fora das demonstrações.",
+      "Don't usar travessão (— ou –) em texto visível.",
+      "Don't usar emoji como elemento gráfico; emoji só dentro de mensagens simuladas.",
+      "Don't usar gradientes decorativos; o único gradiente da marca é o que desenha a faixa de destaque."
+    ]
+  }
+}
